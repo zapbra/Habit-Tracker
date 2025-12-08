@@ -1,4 +1,4 @@
-type Habit = {
+export type Habit = {
     id: string;
     userId: string;
     name: string;
@@ -13,7 +13,7 @@ type Habit = {
     updatedAt: Date;
 };
 
-type HabitEntry = {
+export type HabitEntry = {
     id: string;
     habitId: string;
     startTime: Date;
