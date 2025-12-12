@@ -36,6 +36,7 @@ export const users = pgTable("users", {
     id: uuid("id").defaultRandom().primaryKey(),
     email: varchar("email", { length: 256 }).notNull(),
     name: varchar("name", { length: 128 }).default("").notNull(),
+    password_hash: varchar("password_hash", { length: 255}).notNull(),
     // add more auth fields as needed (e.g. provider ID, hashed password) depending on your auth solution
     createdAt: timestamp("created_at").defaultNow().notNull(),
 });

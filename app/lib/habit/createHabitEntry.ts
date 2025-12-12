@@ -1,7 +1,7 @@
 "use server";
 
-import { db } from "../lib/db/drizzle";
-import { habitEntries } from "../lib/db/schema";
+import { db } from "../db";
+import { habitEntries } from "../db/schema";
 import { HabitEntryFormValues } from "../validation/habits";
 
 export async function createHabitEntry(data: HabitEntryFormValues) {

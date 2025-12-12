@@ -1,3 +1,4 @@
+"use client";
 import { HabitForm } from "../components/HabitForm";
 import { createHabit } from "../lib/habit/createHabit";
 import { HabitFormValues } from "../lib/validation/habits";
